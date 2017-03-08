@@ -1,0 +1,128 @@
+/* ================================================================ 
+Copyright (c) 2013-2016 Telstock, S.A. de C.V. Todos los Derechos Reservados.
+
+Elaboró: Vanessa Alejandra Muñoz Corbalá, Julio 22, 2016
+=================================================================== */
+	
+	
+/* ------------------------------------------------------------------- */
+/*	Navegación Menú Lateral
+/* ------------------------------------------------------------------- */
+aside { position: fixed; top: 70px;
+	-webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+	-moz-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+	-ms-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+	-o-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);}
+	
+/* ------------------------------------------------------------------- */
+/*	Menú -- Icons -- Características Generales
+/* ------------------------------------------------------------------- */
+
+aside nav {background-color:transparent; margin: 0;
+	-webkit-transition: all 0.3s ease-in-out;
+	   -moz-transition: all 0.3s ease-in-out;
+	    -ms-transition: all 0.3s ease-in-out;
+	     -o-transition: all 0.3s ease-in-out;
+	        transition: all 0.3s ease-in-out;}
+
+aside .nav { width: 250px; background-color:transparent;font-size:14px;text-transform:uppercase;}
+
+aside .nav > li.panel {
+	-webkit-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+	   -moz-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+	    -ms-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+	     -o-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+	        box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+    border-radius: 0px;
+    margin-bottom: 0px;
+     background-color:transparent;
+	 border: 0 solid transparent;}
+aside .nav > li i {
+	display: block;
+    float: left;
+    font-size: 21px;
+    height: 50px;
+    line-height: 45px;
+    margin-right: 10px;
+    position: relative;
+    width: 24px;
+	text-align: center;}
+aside .nav > li > a {
+	font-family:'Regular', Arial, Helvetica, sans-serif;
+	color:#666666;
+	background-color:#F2F2F2;
+	border-width:1px 0 1px 8px;
+	border-style:solid none solid solid;
+    border-color:#FFFFFF rgba(0,0,0,0) #CCCCCC rgba(0,0,0,0);
+    display: block;
+    padding: 0px 15px 0px 7px;
+    position: relative;
+	height:50px;
+	line-height:50px;
+	-webkit-transition: all 0.3s ease-in-out;
+	   -moz-transition: all 0.3s ease-in-out;
+	    -ms-transition: all 0.3s ease-in-out;
+	     -o-transition: all 0.3s ease-in-out;
+	        transition: all 0.3s ease-in-out;}	
+aside .nav > li > a:focus, aside .nav > li > a:hover {
+	color:#333333;
+	background-color:#FFFFFF;
+    border-color:#FFFFFF rgba(0,0,0,0) #CCCCCC #999999;}
+aside .nav .open > a, aside .nav .open > a:focus, aside .nav .open > a:hover {
+	color:#333333;
+    background-color: #FFFFFF;
+    border-color:#FFFFFF rgba(0,0,0,0) #CCCCCC #669900;}	
+	
+aside .nav > li > ul > li,
+aside .nav > li > ul > li a {
+	background-color:#FFFFFF;
+	border-width:0 0 1px;
+	border-style:none none solid;
+    border-color:rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #cccccc rgba(0,0,0,0);
+    display: block;
+    position: relative;
+	height:35px;
+	line-height:35px;
+	text-indent:15px;
+	padding:0px !important;
+	-webkit-transition: all 0.5s ease-in-out;
+	   -moz-transition: all 0.5s ease-in-out;
+	    -ms-transition: all 0.5s ease-in-out;
+	     -o-transition: all 0.5s ease-in-out;
+	        transition: all 0.5s ease-in-out;}
+aside .nav > li > ul > li {
+	cursor: default;
+	font-family:'Bold', Arial, Helvetica, sans-serif;
+	background-color: #004ab1;
+    color: #FFFFFF;}
+aside .nav > li > ul > li a {
+	cursor: pointer;
+	font-family:'Book', Arial, Helvetica, sans-serif;
+	color:#666666;}	
+aside .nav > li > ul > li a:focus,
+aside .nav > li > ul > li a:hover {
+	color:#333333; border-color:rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #669900 rgba(0,0,0,0);}
+			
+aside .nav > li.active a:before{
+	content:"\f0da";
+	font-family:FontAwesome;
+	display:block;
+    font-size: 30px;
+    height: 35px;
+    line-height: 35px;
+	position:absolute;
+    left: -15px;
+    width: 27px;
+	color:#004ab1;}
+aside .nav > li.active a{color:#333333;}
+
+/* ================== Adaptativo ================== */
+#page-content { margin: 100px auto 75px;}
+
+@media (min-width: 768px) {
+	#page-content { margin-left: 290px; margin-right: 25px;}
+}
+@media screen and (max-width: 767px) {	
+	#page-content { margin-left: 25px; margin-right: 25px;}	
+}

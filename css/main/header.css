@@ -1,0 +1,79 @@
+/* ================================================================ 
+Copyright (c) 2013-2015 Telstock, S.A. de C.V. Todos los Derechos Reservados.
+
+Elaboró: Vanessa Alejandra Muñoz Corbalá,  Mayo 7, 2014
+=================================================================== */
+
+/***************************** HEADER ********************************/ 
+.header {
+	margin:0px auto;
+	padding:0;}	
+.header h3 {
+	display: block;
+    float: left;
+    font-family: "Regular",Helvetica,Arial,sans-serif;
+    font-size: 18px;
+    line-height: 70px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    vertical-align: middle;}
+header .navbar {
+	border-radius:0px !important;
+	margin-bottom: 0;}
+.header img.logo {
+	height: 50px;
+	width:auto;
+    margin: 5px;
+	position: relative; float: left;}
+header .navbar-default {
+    background-color: #e5eaef;
+	border-style: none;
+	border-width: 0px;
+	border-color:transparent;
+	padding:0 25px;
+	-webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
+	-moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
+	-ms-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
+	-o-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);}
+	
+.header .nav>li{border-style: none solid; border-width: 0 1px;}
+.header .nav>li>a:hover, .header .nav>li>a:focus{
+	text-decoration:none;}
+.header .nav>li.disabled>a:hover, .header .nav>li.disabled>a:focus{
+	text-decoration:none;cursor:not-allowed}
+.header .navbar-form { margin:0;}
+.header .btn {
+    font-size: 14px;
+    line-height: 28px;
+    padding: 3px 10px;}
+.header .btn i {
+    font-size: 18px;
+    line-height: 24px;}
+.header .navbar-default .row {
+	border-style: solid none;
+	border-width: 1px 0px;
+	border-color: #f0f3f6 transparent #dbe1e8;
+    padding: 0;}
+.header .navbar-default .row p {
+    font-family: "semiBold", Helvetica, Arial, sans-serif;}
+.header .navbar-default .row:first-child {
+	border-style: solid none;
+	border-width: 0px 0px 1px;
+	border-color: transparent transparent #dbe1e8;}
+.header .navbar-default .row:last-child p {
+	text-transform:uppercase;
+    font-family: "Bold", Helvetica, Arial, sans-serif;;}
+.header .navbar-default .row:last-child {
+	border-style: solid none;
+	border-width: 1px 0px 0px;
+	border-color: #f0f3f6 transparent transparent;}
+	
+.header .navbar-default p {
+	font-size:14px;
+	line-height: 28px;
+    margin: 6px 0 0;
+	overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;}

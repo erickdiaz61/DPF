@@ -1,0 +1,215 @@
+/* ================================================================ 
+Copyright (c) 2013-2017 Telstock, S.A. de C.V. Todos los Derechos Reservados.
+Elaboró: Vanessa Alejandra Muñoz Corbalá,  Marzo 3, 2017
+=================================================================== */
+
+/* CSS Document */
+
+/*************** GLOBAL ***************/	
+*{ margin: 0; outline:none !important; -webkit-touch-action: manipulation; -moz-touch-action: manipulation; -ms-touch-action: manipulation; -o-touch-action: manipulation; touch-action: manipulation;}
+
+html, body {
+	width:100%;
+	height: 100%;
+	min-height: 100%;
+	overflow-x:hidden;
+	margin:0;
+	padding:0;
+	-webkit-font-smoothing: subpixel-antialiased;
+	   -moz-font-smoothing: subpixel-antialiased;
+	    -ms-font-smoothing: subpixel-antialiased;
+	     -o-font-smoothing: subpixel-antialiased;
+	        font-smoothing: subpixel-antialiased;
+	-webkit-text-size-adjust: 100%;
+	   -moz-text-size-adjust: 100%;
+	    -ms-text-size-adjust: 100%;
+	     -o-text-size-adjust: 100%;
+	        text-size-adjust: 100%;
+	text-rendering: optimizelegibility;}	
+			
+body, button, input, textarea, select, .btn {
+    -webkit-font-smoothing: antialiased;
+	   -moz-font-smoothing: antialiased;
+	    -ms-font-smoothing: antialiased;
+	     -o-font-smoothing: antialiased;
+	        font-smoothing: antialiased;}
+
+body {
+    background: #FFFFFF url(../../img/bg_01.jpg)no-repeat fixed center bottom / cover ;
+    font-family: "Regular",Arial,Helvetica,sans-serif;
+    font-size: 16px;
+    line-height: 20px;}
+.background {
+    background-color: rgba(255, 255, 255, 0.75);
+    padding: 0px;
+    height: auto !important;
+    margin: 0 auto -38px;
+    min-height: 100%;
+    width: 100%;}
+
+
+::-webkit-selection { background: #333333; color: #FFFFFF; }
+::-moz-selection { background: #333333; color: #FFFFFF;  }
+::-ms-selection { background: #333333; color: #FFFFFF; }
+::selection { background: #333333; color: #FFFFFF; }
+	
+/*-----------------------------------------------------*/
+/*	TEXTOS
+/*-----------------------------------------------------*/
+h1{font-family:'Regular', Helvetica, Arial, sans-serif;font-size:42px;line-height:46px;}
+h2{font-family:'Regular', Helvetica, Arial, sans-serif;font-size:36px;line-height:40px;}
+h3{font-family:'Regular', Helvetica, Arial, sans-serif;font-size:30px;line-height:34px;}
+h4{font-family:'semiBold', Helvetica, Arial, sans-serif;font-size:24px;line-height:28px;}
+h5{font-family:'Bold', Helvetica, Arial, sans-serif;font-size:20px;line-height:24px;}
+h6{font-family:'Bold', Helvetica, Arial, sans-serif;font-size:18px;line-height:22px;}
+
+p{font-family:'Regular', Helvetica, Arial, sans-serif;font-size:16px;line-height:20px;}
+
+/*-----------------------------------------------------------------------------------*/
+/*	01.	Login
+/*-----------------------------------------------------------------------------------*/
+:-webkit-input-placeholder {color: rgba(0, 0, 0, 0.5) !important;}
+::-webkit-input-placeholder {color: rgba(0, 0, 0, 0.5) !important;}
+:-moz-placeholder {color: rgba(0, 0, 0, 0.5) !important;}
+::-moz-placeholder {color: rgba(0, 0, 0, 0.5) !important;}
+:-o-placeholder {color: rgba(0, 0, 0, 0.5) !important;}
+::-o-placeholder {color: rgba(0, 0, 0, 0.5) !important;}
+:-ms-input-placeholder {color: rgba(0, 0, 0, 0.5) !important;}
+:placeholder {color: rgba(0, 0, 0, 0.5) !important;}
+::placeholder {color: rgba(0, 0, 0, 0.5) !important;}
+
+#main {
+    height: auto;
+    margin: 0 auto 25px;
+    min-height: 100%;
+    width: 100%;
+	display:block;}
+#login > header > h1 {
+	font-weight: lighter;
+    margin: 0 auto;
+    text-align: center;}
+#login .logo {
+	height: auto;
+	margin: 0 auto;
+	display:block;
+	position:relative;
+	text-align: center;
+    width: 75%;}
+
+#login .logo img{
+	display: block;
+    height: auto;
+    margin: 0 auto 35px;
+    position: relative;
+    width: 100%;}
+#login .box {
+    display: block;
+    padding: 30px 0px;
+	margin:0 auto 50px;
+    position: relative;}
+[class="form-type-"] { position: absolute; top: 50%;}
+#login .login-control.form-control { height:48px;}
+#login .login-control {
+    border-radius: 0;
+    border-style: solid;
+    border-width: 1px;
+    font-family: "Regular",Helvetica,Arial,sans-serif;
+    font-size: 18px;
+    line-height: 36px;
+    margin: 10px auto;
+    padding: 6px 12px;
+    width: 100%;
+		-webkit-box-shadow:none;
+		   -moz-box-shadow:none;
+			-ms-box-shadow:none;
+			 -o-box-shadow:none;
+				box-shadow:none;
+    -webkit-transition: all 0.5s ease-in-out 0s;
+       -moz-transition: all 0.5s ease-in-out 0s;
+        -ms-transition: all 0.5s ease-in-out 0s;
+         -o-transition: all 0.5s ease-in-out 0s;
+            transition: all 0.5s ease-in-out 0s;}
+#login .login-control:focus {
+    border-style: solid;
+    border-width: 1px;
+		-webkit-box-shadow:none;
+		   -moz-box-shadow:none;
+			-ms-box-shadow:none;
+			 -o-box-shadow:none;
+				box-shadow:none;}
+
+#login .help-block.label {
+	font-family: "Bold", Helvetica, Arial, sans-serif;
+	margin-bottom:5px;
+	letter-spacing: 0.075em;}
+#login .form-group.has-error .help-block {
+    border-radius: 2px;
+    font-family: "Regular",Helvetica,Arial,sans-serif;
+    font-size: 18px;
+    line-height: 20px;
+    margin: 0px;
+    padding: 20px 25px;
+    -webkit-transition: all 0.5s ease-in-out 0s;
+       -moz-transition: all 0.5s ease-in-out 0s;
+        -ms-transition: all 0.5s ease-in-out 0s;
+         -o-transition: all 0.5s ease-in-out 0s;
+            transition: all 0.5s ease-in-out 0s;}
+	
+.form-group.has-feedback, .btn.btn-default {
+	-webkit-animation-name: fadeIn; -moz-animation-name: fadeIn; -ms-animation-name: fadeIn; -o-animation-name: fadeIn; animation-name: fadeIn;
+	-webkit-animation-duration:1s; -moz-animation-duration:1s; -ms-animation-duration:1s; -o-animation-duration:1s; animation-duration:1s;
+	-webkit-animation-delay: 0.5s; -moz-animation-delay: 0.5s; -ms-animation-delay: 0.5s; -o-animation-delay: 0.5s; animation-delay: 0.5s;
+	-webkit-animation-fill-mode:both;-moz-animation-fill-mode:both;-ms-animation-fill-mode:both;-o-animation-fill-mode:both;animation-fill-mode:both;-webkit-transition: all 0.5s ease-in-out 0s;
+       -moz-transition: all 0.5s ease-in-out 0s;
+        -ms-transition: all 0.5s ease-in-out 0s;
+         -o-transition: all 0.5s ease-in-out 0s;
+            transition: all 0.5s ease-in-out 0s;}
+.error .btn.btn-default {
+	-webkit-animation-name: none; -moz-animation-name: none; -ms-animation-name: none; -o-animation-name: none; animation-name: none; margin: 15px auto; width: 60%;}		
+.alert .form-group { margin-bottom: 0;}
+.alert label { font-size:12px; font-weight: normal;margin-bottom: 0px;}
+.error { text-align: center; margin: 0px auto;}
+.error h1 {font-family: "Bold",Helvetica,Arial,sans-serif; font-size: 7em; line-height: 1em; }
+.error p {font-size: 18px; line-height: 22px; margin:30px auto;}	
+/*-----------------------------------------------------*/
+/*	ADAPTATIVO
+/*-----------------------------------------------------*/
+/******************* Login **********************/
+@media (min-width: 768px) { #login { padding: 0px 30px;} }
+@media (max-width: 767px) {  
+	#login { padding: 30px 15px;}
+	#login .logo img { margin: 0 auto 0px;}
+	#login .box { margin:0px auto 50px;}}	
+/***************************** FOOTER ********************************/
+footer {padding: 10px 0; background: #FAFAFA; border-top:1px solid #EAEAEA;
+	-webkit-box-shadow: inset 0 1px 0 rgba(250, 250, 250, 0.9);
+	-moz-box-shadow: inset 0 1px 0 rgba(250, 250, 250, 0.9);
+	-ms-box-shadow: inset 0 1px 0 rgba(250, 250, 250, 0.9);
+	-o-box-shadow: inset 0 1px 0 rgba(250, 250, 250, 0.9);
+	box-shadow: inset 0 1px 0 rgba(250, 250, 250, 0.9);}
+footer .copy { color: #267196; text-align: center; margin:15px auto;}
+footer .copy img {display: inline-block; padding-top:10px; height:100%; width:auto;} 
+footer .copy p { display: inline-block; font-family: "Regular",Helvetica,Arial,sans-serif; font-size: 12px; font-weight: normal; line-height: 15px; vertical-align: bottom; margin:0 0 0 25px;}
+footer .copy p i {font-size: 14px; line-height:20px; display: inline-block; margin-right:3px;}
+footer a, footer span { color: #267196; cursor: pointer; text-decoration: none; margin-left:25px;}
+footer a:hover, footer span:hover { color: #243a78; text-decoration: none;
+    -webkit-transition: all 0.3s ease-in-out 0s; -moz-transition: all 0.3s ease-in-out 0s; -ms-transition: all 0.3s ease-in-out 0s; -o-transition: all 0.3s ease-in-out 0s; transition: all 0.3s ease-in-out 0s;}
+footer span { border-color: rgba(242, 242, 242, 0.25);border-image: none; border-style: solid; border-width: 0 0 0 1px; padding-left:15px; margin-left:15px;}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+footer .copy p {padding-top:0px;	 text-align:center;}	}
+
+
+/*--------------------------------------------------------------------------*/
+/***************************** HEXADECIMALES ********************************/
+/*--------------------------------------------------------------------------*/
+body { color:#333333; }
+#login > header > h1 { color: #ffffff; text-shadow: 0 0 4px rgba(0, 0, 0, 1);}
+#login .login-control { color: #333333; background-color: rgba(255, 255, 255, 0); border-color: rgba(38,113,150, 0) rgba(38,113,150, 0) #267196;}
+#login .login-control:focus { color: #333333; background-color: rgba(255,255,255,0.35); border-color: rgba(38,113,150,1) rgba(38,113,150,1) #267196;}
+#login .help-block.label { color:#414042;}
+#login .form-group.has-error .help-block {color: #ee3124; background-color: rgba(255, 255, 255, 0.45); border: 1px solid #fff;}
+.btn-default { background-color: #6fabc9; border-color: #267196; color: #FFFFFF;}
+.btn-default.focus, .btn-default:focus { background-color: #267196; border-color: #267196; color: #FFFFFF;}
+.btn-default:hover { background-color: #267196; border-color: #267196; color: #FFFFFF;}
+
+.error {color:#414042; text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.75);}
